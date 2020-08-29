@@ -56,6 +56,18 @@ nav ul li a{
   width: 100%
 }
 
+.skills-data{
+  text-align: left;
+  margin-left: 25%;
+}
+.projects-data{
+  text-align: left;
+  margin-left: 15%;
+}
+.projects-value{
+  text-align: left;
+  margin-left: 5%;
+}
 footer{
     display: flex;
     justify-content: space-between;
