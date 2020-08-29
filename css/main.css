@@ -67,6 +67,7 @@ nav ul li a{
 .projects-value{
   text-align: left;
   margin-left: 5%;
+  margin-right: 10%;
 }
 footer{
     display: flex;
