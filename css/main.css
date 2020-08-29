@@ -44,6 +44,18 @@ nav ul li a{
     color:blueviolet;
 }
 
+/* #about{
+  width: 400px;
+  
+  align-content: center;
+} */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -76,7 +88,7 @@ footer{
 }
 
 .bottom-links {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   max-width: 460px;
   display: flex;
@@ -92,9 +104,6 @@ footer{
 }
 #git {
   color: #F3B63A;
-}
-#so {
-  color: #f48024;
 }
 #hn {
   color: #36C2D6;
