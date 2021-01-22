@@ -1,125 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Samar Anand</title>
-        <link rel="icon" href="img/logo.png" type="image/png">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-    </head>
-    <body>
-        <section class="head" id="headid">
-            <nav>
-                <ul>
-                    <li><img src="img/logo.png" alt="logo" height="50px" width="50px" style="align-content: flex-start;"></li>
-                    <li><a data-scroll href="#about" class="active" >About</a></li>
-                    <li><a data-scroll href="#skills" class="active">Skills</a> </li>
-                    <li><a data-scroll href="#projects" class="active">Projects</a> </li>
-                    <li><a data-scroll href="#contacts" class="active">Contacts</a> </li>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samar Anand</title>
+    <script defer src="js/icons/all.js"></script>
+  </head>
+
+  <body class="grey darken-4 light grey-text text-lighten-2">
+    <header class="main-header">
+      <div class="primary-overlay">
+        <div class="navbar-fixed">
+          <nav class="transparent">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="#home" class="brand-logo"
+                  >Samar <span class="hide-on-med-type">Anand</span></a
+                >
+
+                <a href="#" data-activates="mobile-nav" class="button-collapse">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                  <li>
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about">About</a>
+                  </li>
+                  <li>
+                    <a href="#skills">Skills</a>
+                  </li>
+                  <li>
+                    <a href="#projects">Projects</a>
+                  </li>
+                  <li>
+                    <a href="#contact" class="btn blue">Contact</a>
+                  </li>
                 </ul>
-            </nav>
-        </section>
-        <!-- about me area -->
-        <br/><br/>
-        <h1 id="about" style="text-align: center;background-color:#758AA2;text-shadow:2px 1px 2px black;">About Me</h1>
-        <table cellspacing="0px">
-            <tr>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Side nav -->
+        <ul
+          class="side-nav grey darken-3 light grey-text text-lighten-3"
+          id="mobile-nav"
+        >
+          <h4 class="grey darken-3 center">Samar Anand</h4>
 
-            <td><img src="img/my-img.png" width="100%" height="100%" alt="Admin-image" style="padding-left:200px ;"></td>
-                <td><h1 style="text-shadow: 3px 1.5px 3px grey;letter-spacing: 3px;">Samar Anand</h1>
-                    <p><em>Student at</em> <br><strong><a href="https://jiscollege.ac.in/">JIS College of Engineering</a></strong></p>
-                    <p>Hi, I'm Kolkata (India) based 3rd-Year CSE disciple, a competitive-programmer,<br> 
-                        specialist on Codeforces and 3* on Codechef.<br> 
-                        I'm also a JavaScript developer and most importantly full time learner. <br>
-                        In free time, I love to write code for my edu web page.
-                    
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <br/><br/>
-        <h1 id ="skills" style="text-align: center;background-color:#758AA2;text-shadow:2px 1px 2px black;">Skills</h1>
-        <!-- skills area -->
-        <br/><br/>
-        <div class="skills-data">
-            <p>
-               <strong>C++</strong>&emsp;&emsp;&emsp; &#9733; &#9733; &#9733; &#9734;&#9734;
+          <li>
+            <a href="#home" class="light grey-text text-lighten-3">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="light grey-text text-lighten-3">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="light grey-text text-lighten-3">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="light grey-text text-lighten-3"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="light grey-text text-lighten-3 btn blue"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <!-- Showcase -->
+        <div class="showcase container light grey-text text-lighten-3">
+          <div class="row">
+            <div class="col s12 main-text">
+              <h5>I'm</h5>
+              <h1>Samar Anand</h1>
+              <h5>Student, JIS College Kalyani</h5>
+              <!-- <p class="flow-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
+                saepe quibusdam. Quae corporis est ipsa.
+              </p> -->
+              <br />
+              <a href="#about" class="btn btn-large blue white-text"
+                >Know More</a
+              >
+              <a href="#about" class="white-text">
+                <i class="material-icons medium scroll-icon"
+                  >arrow_drop_down_circle</i
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- about-area -->
+    <section class="section section-about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5">
+            <br />
+            <img src="img/my-img.png" alt="" class="square responsive-img" />
+          </div>
+          <div class="col s12 m6">
+            <h2 class="light grey-text text-lighten-3">
+              <strong>About Me</strong>
+            </h2>
+            <p class="flow-text">
+              I'm Samar Anand <br />Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Impedit quibusdam magni ipsa. Unde, velit ad!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              fuga iusto ducimus nemo
             </p>
-            <p>
-                <strong>DSA</strong>&emsp;&emsp;&emsp; &#9733; &#9733; &#9733; &#9734;&#9734;
-             </p>
-             <p>
-                <strong>JavaScript</strong>&emsp; &#9733; &#9733; &#9734; &#9734;&#9734;
-             </p>
+          </div>
         </div>
-        <!-- project area -->
-        <br/><br/>
-        <h1 id ="projects" style="text-align: center;background-color:#758AA2;text-shadow:2px 1px 2px black;">Projects</h1>
-        <br/><br/>
-        <div class="projects-data">
-            <p>
-               <strong>Library Managment System</strong> </p>
-               <div class="projects-value">
-                A small project designed using Language C for managing all the books. any one can store the name of book, number of units available and the details of books which are given to students.
-                <a href="https://github.com/samaranand/library-management-system"> project-details</a>
-               </div>
-               
-            
-            <p>
-                <strong>flycom-byte</strong>
-             </p>
-             <div class="projects-value">
-                A small project designed using JS/HTML/CSS for searching flight on the basis of fare and time. any one can find the flights for respective destination by using greedy time or money.
-                <a href="https://github.com/samaranand/flycom-byte.github.io"> project-details</a>
-               </div>
-             
+      </div>
+    </section>
+
+    <!-- skills area -->
+
+    <section class="section section-boxes center" id="skills">
+      <h2 class="light grey-text text-lighten-3"><strong>Skills</strong></h2>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l3 box secondary-bg">
+            <i class="material-icons small">show_chart</i>
+
+            <h4>skill-1</h4>
+          </div>
+          <div class="col s12 m6 l3 box secondary-bg">
+            <i class="material-icons small">show_chart</i>
+            <h4>skill-2</h4>
+          </div>
+          <div class="col s12 m6 l3 box secondary-bg">
+            <i class="material-icons small">show_chart</i>
+
+            <h4>skill-3</h4>
+          </div>
+          <div class="col s12 m6 l3 box secondary-bg">
+            <i class="material-icons small">show_chart</i>
+
+            <h4>skill-4</h4>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <br/><br/><br/><br/>
+    <!-- project - area -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="down">
-            <div class="love">
-                <img class="logo2" src="img/logo.png" alt="">
-                <h4>Designed and developed by Samar Anand</h4>
-            </div>
-            <div class="bottom-links">
-                <a target="_blank" id = "em" href="mailto: [samarss2015@gmail.com]" >Email</a>
-                <a target="_blank" id = "git" href="https://github.com/samaranand" >Github</a>
-                <a target="_blank" id = "hn" href="https://hashnode.com/@samaranand" >Hashnode</a>
-                <a target="_blank" id = "me" href="#" >Medium</a>
-            </div>
-            
+    <section class="section section-project center" id="projects">
+      <h2 class="light grey-text text-lighten-3"><strong>Projects</strong></h2>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12 l12 secondary-bg">
+            <h4>Project-1</h4>
+          </div>
+          <div class="col s12 m12 l12 secondary-bg">
+            <h4>Project-2</h4>
+          </div>
+          <div class="col s12 m12 l12 secondary-bg">
+            <h4>Project-3</h4>
+          </div>
+          <!-- <div class="col s12 m12 l12 secondary-bg">
+            <h4>Project-4</h4>
+          </div>
+          <div class="col s12 m12 l12 secondary-bg">
+            <h4>Project-5</h4>
+          </div>
+          <div class="col s12 m12 l12 secondary-bg">
+            <h4>Project-6</h4>
+          </div> -->
         </div>
+      </div>
+    </section>
 
+    <!-- section- contact -->
 
+    <!-- footer -->
 
+    <footer class="page-footer grey darken-3 light grey-text text-lighten-2" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12 m5">
+            <h5 >Footer Content</h5>
+            <p class="flow-text">
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12 m5 offset-m2">
+            <h5 class="white-text">Contacts</h5>
+            <ul>
+              <li>
+                
+                <a class="grey-text text-lighten-3" href="#!"><i class="material-icons tiny">email</i> Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © Samar Anand
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
 
-        <!-- Footer -->
-        <!-- <footer>
-                <h5>  Designed and developed by Samar Anand </h5>
-                <p>&copy;Copyright 2020 reserved.</p>
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Init Sidenav
+        $(".button-collapse").sideNav();
 
-            <div class="bottom-links">
-                <a target="_blank" id = "em" href="mailto:samarss2015@gmail.com" >Email</a>
-                <a target="_blank" id = "git" href="https://github.com/samaranand" >Github</a>
-                <a target="_blank" id = "hn" href="https://hashnode.com/@samaranand" >Hashnode</a>
-                <a target="_blank" id = "me" href="#" >Medium</a>
-            </div>
-        </footer>
-        
-         -->
-         <script src="JS/main.js"></script>
-    </body>
+        //scrollFire
+
+        const options = [
+          {
+            selector: ".main-text",
+            offset: 0,
+            callback: function (el) {
+              Materialize.fadeInImage($(el));
+            },
+          },
+          {
+            selector: ".navbar-fixed",
+            offset: 1200,
+            callback: function () {
+              $("nav").removeClass("transparent").addClass("grey darken-3");
+            },
+          },
+        ];
+
+        Materialize.scrollFire(options);
+      });
+    </script>
+  </body>
 </html>
