@@ -43,3 +43,36 @@
     right: auto;
   }
 }
+
+.secondary-bg {
+  background-color: #242526 !important;
+  border-radius: 5px;
+}
+
+.box {
+  padding: 40px 10px !important;
+}
+
+.section-boxes .row{
+  margin-bottom: 0px !important;
+}
+
+.section-project .row{
+  margin-top: 0px !important;
+  margin: 0px !important;
+  /* padding: 0; */
+}
+
+.section-project  .secondary-bg{
+  margin-top: 5px;
+}
+
+
+
+/* 
+@media(max-width:600px){
+  .main-header{
+    height: 70vh;
+  }
+} */
+
