@@ -37,19 +37,19 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                   <li>
-                    <a href="#home">Home</a>
+                    <a href="#home" class="waves-effect">Home</a>
                   </li>
                   <li>
-                    <a href="#about">About</a>
+                    <a href="#about" class="waves-effect">About</a>
                   </li>
                   <li>
-                    <a href="#skills">Skills</a>
+                    <a href="#skills" class="waves-effect">Skills</a>
                   </li>
                   <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects" class="waves-effect">Projects</a>
                   </li>
                   <li>
-                    <a href="#contact" class="btn blue">Contact</a>
+                    <a href="#contact" class="btn blue waves-effect">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -64,27 +64,45 @@
           <h4 class="grey darken-3 center">Samar Anand</h4>
 
           <li>
-            <a href="#home" class="light grey-text text-lighten-3">Home</a>
+            <a href="#home" class="light grey-text text-lighten-3 waves-effect"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#about" class="light grey-text text-lighten-3">About</a>
+            <a href="#about" class="light grey-text text-lighten-3 waves-effect"
+              >About</a
+            >
           </li>
           <li>
-            <a href="#skills" class="light grey-text text-lighten-3">Skills</a>
+            <a
+              href="#skills"
+              class="light grey-text text-lighten-3 waves-effect"
+              >Skills</a
+            >
           </li>
           <li>
-            <a href="#projects" class="light grey-text text-lighten-3"
+            <a
+              href="#projects"
+              class="light grey-text text-lighten-3 waves-effect"
               >Projects</a
             >
           </li>
           <li>
-            <a href="#contact" class="light grey-text text-lighten-3 btn blue"
+            <a
+              href="#contact"
+              class="light grey-text text-lighten-3 btn blue waves-effect"
               >Contact</a
             >
           </li>
         </ul>
+        <!-- <div class="progress">
+          <div class="indeterminate"></div>
+        </div> -->
         <!-- Showcase -->
-        <div class="showcase container light grey-text text-lighten-3" id="home">
+        <div
+          class="showcase container light grey-text text-lighten-3 scrollspy"
+          id="home"
+        >
           <div class="row">
             <div class="col s12 m12 main-text">
               <h5>I'm</h5>
@@ -110,23 +128,45 @@
     </header>
 
     <!-- about-area -->
-    <section class="section section-about" id="about">
+    <section class="section section-about scrollspy" id="about">
       <div class="container">
         <div class="row">
           <div class="col s12 m5">
             <br />
             <img src="img/my-img.png" alt="" class="square responsive-img" />
           </div>
-          <div class="col s12 m6">
+          <div class="col s12 m6 offset-m1">
             <h2 class="light grey-text text-lighten-3">
               <strong>About Me</strong>
             </h2>
             <p class="flow-text">
-              I'm Samar Anand <br />Lorem ipsum dolor sit amet consectetur,
+              
+              I'm <strong>Samar Anand,</strong> <br />Lorem ipsum dolor sit amet consectetur,
               adipisicing elit. Impedit quibusdam magni ipsa. Unde, velit ad!
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              fuga iusto ducimus nemo
+              Lorem, ipsum dolor.
+              <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              fuga iusto ducimus nemo -->
             </p>
+            <a href="http://codeforces.com/profile/samaranand">
+              <img
+                class="tooltipped"
+                data-position="bottom"
+                data-tooltip="Click for CF Profile"
+                src="https://cp-logo.vercel.app/codeforces/samaranand"
+                alt=""
+                srcset=""
+              />
+            </a>
+            <a href="https://www.codechef.com/users/samaranand1">
+              <img
+                class="tooltipped"
+                data-position="bottom"
+                data-tooltip="Click for CC Profile"
+                src="https://cp-logo.vercel.app/codechef/samaranand1"
+                alt=""
+                srcset=""
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -134,7 +174,7 @@
 
     <!-- skills area -->
 
-    <section class="section section-boxes center" id="skills">
+    <section class="section section-boxes center scrollspy" id="skills">
       <h2 class="light grey-text text-lighten-3"><strong>Skills</strong></h2>
       <div class="container">
         <div class="row">
@@ -163,28 +203,39 @@
 
     <!-- project - area -->
 
-    <section class="section section-project center" id="projects">
+    <section class="section section-project center scrollspy" id="projects">
       <h2 class="light grey-text text-lighten-3"><strong>Projects</strong></h2>
       <div class="container">
         <div class="row">
-          <div class="col s12 m12 l12 secondary-bg">
-            <h4>Project-1</h4>
-          </div>
-          <div class="col s12 m12 l12 secondary-bg">
-            <h4>Project-2</h4>
-          </div>
-          <div class="col s12 m12 l12 secondary-bg">
-            <h4>Project-3</h4>
-          </div>
-          <!-- <div class="col s12 m12 l12 secondary-bg">
-            <h4>Project-4</h4>
-          </div>
-          <div class="col s12 m12 l12 secondary-bg">
-            <h4>Project-5</h4>
-          </div>
-          <div class="col s12 m12 l12 secondary-bg">
-            <h4>Project-6</h4>
-          </div> -->
+          <ul class="collapsible">
+            <li class="col s12 m12 l12 secondary-bg">
+              <div class="collapsible-header secondary-bg">
+                <h5>Project-1</h5>
+              </div>
+              <div class="collapsible-body left secondary-bg project-element">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li class="col s12 m12 l12 secondary-bg">
+              <div class="collapsible-header secondary-bg">
+                <h5>Project-2</h5>
+                <section class="section right prjct-head">
+                  <a href="#home">code</a> link
+                </section>
+              </div>
+              <div class="collapsible-body left secondary-bg project-element">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+            <li class="col s12 m12 l12 secondary-bg">
+              <div class="collapsible-header secondary-bg">
+                <h5>Project-3</h5>
+              </div>
+              <div class="collapsible-body left secondary-bg project-element">
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -193,24 +244,40 @@
 
     <!-- footer -->
 
-    <footer class="page-footer grey darken-3 light grey-text text-lighten-2" id="contact">
+    <footer
+      class="page-footer grey darken-3 light grey-text text-lighten-2 scrollspy"
+      id="contact"
+    >
       <div class="container">
         <div class="row">
           <div class="col l6 s12 m5">
-            <h5 >Footer Content</h5>
-            <p class="flow-text">
-              Lorem ipsum dolor sit amet.
-            </p>
+            <h5>Footer Content</h5>
+            <p class="flow-text">Lorem ipsum dolor sit amet.</p>
+            
           </div>
           <div class="col l4 offset-l2 s12 m5 offset-m2">
             <h5 class="white-text">Contacts</h5>
             <ul>
               <li>
-                
-                <a class="grey-text text-lighten-3" href="#!"><i class="material-icons tiny">email</i> Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  ><i class="material-icons tiny">email</i> Email</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  ><i class="fab fa-git-square"></i> Github</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  ><i class="fab fa-dev"></i> Dev</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  ><i class="fab fa-medium"></i> Medium</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -218,7 +285,13 @@
       <div class="footer-copyright">
         <div class="container">
           © Samar Anand
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          <a
+            class=" darken-3 grey-text text-lighten-4 right"
+            href="/files/Samar-Anand_Resume.pdf" download
+            ><strong class="tooltipped"
+            data-position="left"
+            data-tooltip="Click to Download Resume">Resume</strong></a
+          >
         </div>
       </div>
     </footer>
@@ -233,6 +306,15 @@
       $(document).ready(function () {
         // Init Sidenav
         $(".button-collapse").sideNav();
+
+        // scrollspy
+        $(".scrollspy").scrollSpy();
+
+        // collapse
+        $(".collapsible").collapsible();
+
+        // tooltip
+        $(".tooltipped").tooltip();
 
         //scrollFire
 
