@@ -55,6 +55,7 @@
 
 .section-boxes .row{
   margin-bottom: 0px !important;
+  border-radius: 10px;
 }
 
 .section-project .row{
@@ -82,7 +83,7 @@
 }
 
 .project-element{
-  padding-top: 0px;
+  /* padding-top: 0px; */
   width: 100%;
   text-align: left;
   
