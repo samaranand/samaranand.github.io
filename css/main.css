@@ -29,11 +29,31 @@
   opacity: 0.5;
 }
 
+
 @media only screen and (max-width: 400px) {
   .hide-on-med-type {
     display: none !important;
   }
+  .name-text {
+    font-size: 37px !important;
+    font-weight: 500 !important;
+  }
 }
+
+@media only screen and (min-width: 400px) and (max-width: 992px) {
+  .name-text {
+    font-size: 45px !important;
+    font-weight: 500 !important;
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .name-text {
+    font-size: 60px !important;
+    font-weight: 500 !important;
+  }
+}
+
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
   .try-diff {
@@ -53,22 +73,20 @@
   padding: 40px 10px !important;
 }
 
-.section-boxes .row{
+.section-boxes .row {
   margin-bottom: 0px !important;
   border-radius: 10px;
 }
 
-.section-project .row{
+.section-project .row {
   margin-top: 0px !important;
   margin: 0px !important;
   /* padding: 0; */
 }
 
-.section-project  .secondary-bg{
+.section-project .secondary-bg {
   margin-top: 5px;
 }
-
-
 
 /* 
 @media(max-width:600px){
@@ -77,21 +95,20 @@
   }
 } */
 
-.collapsible, .collapsible-header, .collapsible-body {
-  border: 0px !important;  
-  
+.collapsible,
+.collapsible-header,
+.collapsible-body {
+  border: 0px !important;
 }
 
-.project-element{
+.project-element {
   /* padding-top: 0px; */
   width: 100%;
   text-align: left;
-  
 }
 
-.prjct-head{
+.prjct-head {
   margin-left: auto !important;
   font-size: medium !important;
   font-weight: 500 !important;
 }
-
