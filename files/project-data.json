@@ -1,25 +1,25 @@
 {
   "project-1": {
     "name": "Library Management System",
-    "description": "Lorem ipsum dolor sit amet.",
+    "description": "An app to maintain the different things at library like books, penalty, and all the diff things.",
     "link": "#!",
-    "github": "#!"
+    "github": "https://github.com/samaranand/library-management-system"
   },
   "project-2": {
     "name": "flyCom Byte",
-    "description": "Lorem ipsum dolor sit amet.",
+    "description": "A pseudo web app for search flight between two station on the basis of time n cost.",
     "link": "http://flycom-byte.github.io/",
-    "github": "#!"
+    "github": "https://github.com/samaranand/JavaScript/tree/master/flycom-byte"
   },
   "project-3": {
     "name": "Exchange Rate Calculator",
-    "description": "Lorem ipsum dolor sit amet.",
+    "description": "A web app so that any one can know the value of different currencies.",
     "link": "http://exchange-rate-calculator-iota.vercel.app/",
-    "github": "#!"
+    "github": "https://github.com/samaranand/JavaScript/tree/master/sep-JS-project/Exchange-Rate-Calculator"
   },
   "project-4": {
     "name": "Contest Schedule",
-    "description": "Lorem ipsum dolor sit amet.",
+    "description": "website to check the schedule for online going or upcoming programming contest.",
     "link": "https://contest-schedule.vercel.app/",
     "github": "https://github.com/samaranand/contest-schedule"
   }
