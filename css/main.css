@@ -115,3 +115,8 @@
   font-size: medium !important;
   font-weight: 500 !important;
 }
+
+blockquote {
+  border-left: 5px solid #198754;
+}
+

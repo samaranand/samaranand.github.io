@@ -1,15 +1,9 @@
 {
-  "project-1": {
-    "name": "Library Management System",
-    "description": "An app to maintain the different things at library like books, penalty, and all the diff things.",
-    "link": "#!",
-    "github": "https://github.com/samaranand/library-management-system"
-  },
-  "project-2": {
-    "name": "flyCom Byte",
-    "description": "A pseudo web app for search flight between two station on the basis of time n cost.",
-    "link": "http://flycom-byte.github.io/",
-    "github": "https://github.com/samaranand/JavaScript/tree/master/flycom-byte"
+  "project-4": {
+    "name": "Contest Schedule",
+    "description": "website to check the schedule for online going or upcoming programming contest.",
+    "link": "https://contest-schedule.vercel.app/",
+    "github": "https://github.com/samaranand/contest-schedule"
   },
   "project-3": {
     "name": "Exchange Rate Calculator",
@@ -17,10 +11,16 @@
     "link": "http://exchange-rate-calculator-iota.vercel.app/",
     "github": "https://github.com/samaranand/JavaScript/tree/master/sep-JS-project/Exchange-Rate-Calculator"
   },
-  "project-4": {
-    "name": "Contest Schedule",
-    "description": "website to check the schedule for online going or upcoming programming contest.",
-    "link": "https://contest-schedule.vercel.app/",
-    "github": "https://github.com/samaranand/contest-schedule"
+  "project-2": {
+    "name": "flyCom Byte",
+    "description": "A pseudo web app for search flight between two station on the basis of time n cost.",
+    "link": "http://flycom-byte.github.io/",
+    "github": "https://github.com/samaranand/JavaScript/tree/master/flycom-byte"
+  },
+  "project-1": {
+    "name": "Library Management System",
+    "description": "An app to maintain the different things at library like books, penalty, and all the diff things.",
+    "link": "#!",
+    "github": "https://github.com/samaranand/library-management-system"
   }
 }
