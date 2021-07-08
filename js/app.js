@@ -27,7 +27,8 @@ const getProjectElement = function (value) {
 async function updateProjectUI() {
   const res = await fetch("./files/project-data.json");
   const data = await res.json();
-  Object.values(data).forEach((e) => {
+  console.log(data)
+  data.forEach((e) => {
     let v = getProjectElement(e);
     projectPlace.insertAdjacentHTML("beforeend", v);
   });

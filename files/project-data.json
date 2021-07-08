@@ -1,26 +1,32 @@
-{
-  "project-4": {
-    "name": "Contest Schedule",
-    "description": "website to check the schedule for online going or upcoming programming contest.",
-    "link": "https://contest-schedule.vercel.app/",
+[{
+    "name": "Task Manager Web App",
+    "description": "A fully functional web app to store the task and get reminded about tasks using the different techniques of JavaScript and NodeJS where anyone can create an account.",
+    "link": "https://samaranand.github.io/Task-Manager-App/",
     "github": "https://github.com/samaranand/contest-schedule"
   },
-  "project-3": {
-    "name": "Exchange Rate Calculator",
-    "description": "A web app so that any one can know the value of different currencies.",
-    "link": "http://exchange-rate-calculator-iota.vercel.app/",
-    "github": "https://github.com/samaranand/JavaScript/tree/master/sep-JS-project/Exchange-Rate-Calculator"
+
+  {
+    "name": "Weather Forecast App",
+    "description": "A fully functional web application that enables users to check the weather of different places just from their mobile",
+    "link": "https://weather-app-lime-two.vercel.app/",
+    "github": "https://github.com/samaranand/contest-schedule"
   },
-  "project-2": {
+  {
+    "name": "Contest Schedule",
+    "description": "A fully functional web app where anyone can check the schedule of the upcoming contest on the different platforms in one place with the multiple functionalities such as in24hr option, running option that filters contest according to the name dark-mode",
+    "link": "https://samaranand.github.io/contest-schedule/",
+    "github": "https://github.com/samaranand/contest-schedule"
+  },
+  {
     "name": "flyCom Byte",
     "description": "A pseudo web app for search flight between two station on the basis of time n cost.",
     "link": "http://flycom-byte.github.io/",
     "github": "https://github.com/samaranand/JavaScript/tree/master/flycom-byte"
   },
-  "project-1": {
+  {
     "name": "Library Management System",
     "description": "An app to maintain the different things at library like books, penalty, and all the diff things.",
     "link": "#!",
     "github": "https://github.com/samaranand/library-management-system"
   }
-}
+]
