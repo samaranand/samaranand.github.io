@@ -2,15 +2,21 @@
     "name": "Task Manager Web App",
     "description": "A fully functional web app to store the task and get reminded about tasks using the different techniques of JavaScript and NodeJS where anyone can create an account.",
     "link": "https://samaranand.github.io/Task-Manager-App/",
-    "github": "https://github.com/samaranand/contest-schedule"
+    "github": "https://github.com/samaranand/Task-Manager-App"
   },
-
   {
-    "name": "Weather Forecast App",
+    "name": "Weather Forecast Web App",
     "description": "A fully functional web application that enables users to check the weather of different places just from their mobile",
     "link": "https://weather-app-lime-two.vercel.app/",
-    "github": "https://github.com/samaranand/contest-schedule"
+    "github": "https://github.com/samaranand/Weather-Forecast-App"
   },
+  {
+    "name": "Blog Web App",
+    "description": "A web application with few but all the required and important features for the reader where anyone can read my blogs without any limit.",
+    "link": "https://samaranand.github.io/blogs/",
+    "github": "https://github.com/samaranand/blogs"
+  },
+  
   {
     "name": "Contest Schedule",
     "description": "A fully functional web app where anyone can check the schedule of the upcoming contest on the different platforms in one place with the multiple functionalities such as in24hr option, running option that filters contest according to the name dark-mode",
