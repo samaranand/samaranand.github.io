@@ -1,4 +1,11 @@
-[{
+[
+  {
+    "name": "Sorting Algorithm Visualizer",
+    "description": "A platform developed using HTML, CSS, Bootsrap and Vanilla JS to visualize sorting algorithms. Here Anyone, specially beginners can easily understand the working of the sorting algorithms like how algo swap two element, choose pivot, use divide and conquer techniques to sort the array.",
+    "link": "https://samaranand.github.io/sorting-visualizer/",
+    "github": "https://github.com/samaranand/sorting-visualizer/"
+  },
+  {
     "name": "Task Manager Web App",
     "description": "A fully functional web app to store the task and get reminded about tasks using the different techniques of JavaScript and NodeJS where anyone can create an account.",
     "link": "https://samaranand.github.io/Task-Manager-App/",
