@@ -67,7 +67,7 @@ const typeAboutMe = ()=>{
   const typedTextSpan = document.querySelector(".typed-text");
   const cursorSpan = document.querySelector(".cursor");
 
-  const textArray = ["Student, JIS College Kalyani", "Intern @eloop.dev", "Competitive Programmer", "JS Developer"];
+  const textArray = ["Student, JIS College of Engineering, Kalyani", "Intern @Bizongo", "Competitive Programmer", "JS Developer"];
   const typingDelay = 150;
   const erasingDelay = 100;
   const newTextDelay = 2000; // Delay between current and next text
