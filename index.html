@@ -1,349 +1,134 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="description" content="Samar Anand is a Bengaluru-based software engineer working on fintech, backend systems, reliability, and personal infrastructure projects." />
+    <link rel="canonical" href="https://samaranand.github.io/" />
+    <meta property="og:title" content="Samar Anand — Software Engineer & Builder" />
+    <meta property="og:description" content="A personal digital workshop for backend systems, fintech work, home-lab experiments, and notes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://samaranand.github.io/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/content.js"></script>
+    <script defer src="js/app.js"></script>
+    <title>Samar Anand — Software Engineer & Builder</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-header>
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="wordmark" href="#top" aria-label="Samar Anand, home">SA<span>.</span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a href="#work">Work</a>
+          <a href="#workshop">Workshop</a>
+          <a href="#experience">Experience</a>
+          <a href="#notes">Notes</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="nav-cta">Contact <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="hero shell" id="top" aria-labelledby="hero-heading">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <p class="eyebrow reveal" data-content="hero.eyebrow"></p>
+        <div class="hero-heading-wrap">
+          <h1 id="hero-heading" class="reveal" data-content="hero.title"></h1>
+          <aside class="hero-side-note reveal" data-content="hero.sideNote"></aside>
+        </div>
+        <div class="hero-bottom reveal">
+          <p class="hero-summary" data-content="hero.summary"></p>
+          <a class="button button-primary" href="#workshop">Open the workshop <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-index reveal" aria-hidden="true"><span>01 / 07</span><span>Digital workshop</span></div>
+      </section>
 
-<head>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   -->
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/main.css" />
+      <section class="section shell" id="work" aria-labelledby="work-heading">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-content="sections.work.kicker"></p>
+          <h2 id="work-heading" data-content="sections.work.title"></h2>
+          <p data-content="sections.work.intro"></p>
+        </div>
+        <div class="case-studies" data-work-list></div>
+        <p class="work-note reveal" data-content="sections.work.note"></p>
+        <div class="work-index reveal" aria-label="Additional professional work" data-work-index></div>
+      </section>
 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/img/logo.png" type="image/icon type" />
-  <title>Samar Anand</title>
-  <script defer src="js/icons/all.js"></script>
-</head>
-
-<body class="grey darken-4 light grey-text text-lighten-2">
-  <header class="main-header">
-    <div class="primary-overlay">
-      <div class="navbar-fixed">
-        <nav class="transparent">
-          <div class="container">
-            <div class="nav-wrapper">
-              <a href="#home" class="brand-logo">Samar <span class="hide-on-med-type">Anand</span></a>
-
-              <a href="#" data-activates="mobile-nav" class="button-collapse">
-                <i class="material-icons">menu</i>
-              </a>
-              <ul class="right hide-on-med-and-down">
-                <li>
-                  <a href="#home" class="waves-effect"><b>Home</b></a>
-                </li>
-                <li>
-                  <a href="#about" class="waves-effect"><b>About</b></a>
-                </li>
-                <li>
-                  <a href="#projects" class="waves-effect"><b>Projects</b></a>
-                </li>
-                <li>
-                  <a href="https://samaranand.github.io/blogs/" class="waves-effect"><b>Blogs</b></a>
-                </li>
-                <li>
-                  <a href="#contact" class="btn blue waves-effect"><b>Contacts</b></a>
-                </li>
-              </ul>
-            </div>
+      <section class="section workshop-section" id="workshop" aria-labelledby="workshop-heading">
+        <div class="shell">
+          <div class="section-heading workshop-heading reveal">
+            <p class="eyebrow" data-content="sections.workshop.kicker"></p>
+            <h2 id="workshop-heading" data-content="sections.workshop.title"></h2>
+            <p data-content="sections.workshop.intro"></p>
           </div>
-        </nav>
-      </div>
-      <!-- Side nav -->
-      <ul class="side-nav grey darken-3 light grey-text text-lighten-3" id="mobile-nav">
-        <h4 class="grey darken-3 center">Samar Anand</h4>
-        <!-- phone wala side -->
-
-        <li>
-          <a href="#home" class="side-nav-a light grey-text text-lighten-3 waves-effect">Home</a>
-        </li>
-        <li>
-          <a href="#about" class="side-nav-a light grey-text text-lighten-3 waves-effect">About</a>
-        </li>
-        <li>
-          <a href="#skills" class="side-nav-a light grey-text text-lighten-3 waves-effect">Skills</a>
-        </li>
-        <li>
-          <a href="#projects" class="side-nav-a light grey-text text-lighten-3 waves-effect">Projects</a>
-        </li>
-        <li>
-          <a href="https://samaranand.github.io/blogs/"
-            class="side-nav-a light grey-text text-lighten-3 waves-effect">Blogs</a>
-        </li>
-        <li>
-          <a href="#contact" class="side-nav-a light grey-text text-lighten-3 btn blue waves-effect">Contacts</a>
-        </li>
-      </ul>
-      <!-- <div class="progress">
-          <div class="indeterminate"></div>
-        </div> -->
-      <!-- Showcase -->
-      <div class="showcase container light grey-text text-lighten-3 scrollspy" id="home">
-        <div class="row">
-          <div class="col s12 m12 main-text">
-            <h5>I'm</h5>
-            <!-- <span class="name-text">Samar Anand</span> -->
-            <span class="name-text"><span id="myname"></span><span id="myname_shuffle"></span></span>
-            <!-- <h5>Student, JIS College Kalyani</h5> -->
-            <h5>
-              <p><span class="typed-text"></span><span class="cursor">_</span></p>
-            </h5>
-            <!-- <p class="flow-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta,
-                saepe quibusdam. Quae corporis est ipsa.
-              </p> -->
-            <br />
-            <a href="#about" class="btn btn-large blue white-text"><b>Know More</b></a>
-            <!-- 
-              <a href="#about" class="btn btn-large blue white-text"
-                ><b>Know More</b></a
-              >
-
-               -->
-
-            <a href="#about" class="white-text">
-              <!-- <i class="material-icons medium scroll-icon"
-                  >arrow_drop_down_circle</i
-                > -->
-              <i class="fas fa-chevron-circle-down scroll-icon fa-3x"></i>
-            </a>
+          <div class="workshop-list" data-workshop-list></div>
+          <div class="ideas-shelf reveal" aria-label="Other things I have been building or thinking about">
+            <p class="eyebrow">/smaller ideas</p>
+            <div class="ideas-list" data-ideas-list></div>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
+      </section>
 
-  <!-- about-area -->
-  <section class="section section-about scrollspy" id="about">
-    <div class="container">
-      <div class="row">
-        <h2 class="center light grey-text text-lighten-3" style="width: 100%;">
-          <strong>About Me!</strong>
-        </h2>
-        <div class="col s12 m3 center" style="margin-top: auto;">
-
-          <br />
-          <img src="img/my-img.jpeg" alt="" class="square responsive-img" style="border-radius: 100%; width: 200px;" />
-        </div>
-        <div class="col s12 m9">
-
-
-          <div class="flow-text">
-            Hi there!
+      <section class="section shell experience-section" id="experience" aria-labelledby="experience-heading">
+        <div class="experience-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-content="sections.experience.kicker"></p>
+            <h2 id="experience-heading" data-content="sections.experience.title"></h2>
+            <p data-content="sections.experience.intro"></p>
           </div>
-          <blockquote class="flow-text">
-            My name is <strong>Samar Anand,</strong> and I'm a self-taught web developer and a final year CSE student at
-            JIS College of Engineering based in Kolkata. <br />
-            <p>
-              <!-- <span style="font-size: 50px;">&#8220;</span>
-                     -->
-
-              <!-- I'm currently working as SDE Intern at <a href="https://eloop.dev/">eloop.dev</a>.
-                     -->
-              I'm always a life-long learner and highly motivated to learn & explore technical and life hacks. Most of
-              the time, I'm totally involved in JavaScript stuff. I make random things using JavaScript, NodeJS and HTML
-              & Bootstrap.<br />
-              Apart from this, I'm a Competitive Coder who participates in different live contests on regular basis on
-              the platform like Codeforces, Codechef, AtCoder etc. I love to solve logical problems and sometimes to get
-              stuck on them. <br />
-              <a href="http://codeforces.com/profile/samaranand" target="_blank">
-                <img class="tooltipped" data-position="bottom" data-tooltip="Click for CF Profile"
-                  src="https://cp-logo.vercel.app/codeforces/samaranand" alt="" srcset="" style="height: 25px;" />
-              </a>
-              <!--  -->
-              <a href="https://www.codechef.com/users/samaranand1" target="_blank">
-                <img class="tooltipped" data-position="bottom" data-tooltip="Click for CC Profile"
-                  src="https://cp-logo.vercel.app/codechef/samaranand1" alt="" srcset="" style="height: 25px;" />
-              </a>
-              <a href="https://atcoder.jp/users/samaranand" target="_blank">
-                <img class="tooltipped" data-position="bottom" data-tooltip="Click for AtCoder Profile"
-                  src="https://cp-logo.vercel.app/atcoder/samaranand" alt="" srcset="" style="height: 25px;" />
-              </a>
-            </p>
-            <p>
-              I am open to join a Competitive technical environemnt where I can push myself to the limits in the terms
-              of learning & execution where I can apply my knowledge and creative skills to make this world a better
-              place.
-            </p>
-            In free time, I mean, when I don't code, I watch movies, read blogs and Yes, of course, I watch cricket !
-            <strong>VK17 is champ !!</strong>
-          </blockquote>
-
+          <div class="timeline" data-experience-list></div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- 
-    <section class="section section-boxes center scrollspy"> 
-      <h2>My GitHub Stats:</h2>
+      </section>
 
-      <p align="center"> 
-        <div class="row">
-          <div class="col s12 m6">
-        <img src="https://github-readme-stats.vercel.app/api?username=samaranand&show_icons=true&theme=dark" alt="Samar Anand | stat"/> 
-
+      <section class="section shell notes-section" id="notes" aria-labelledby="notes-heading">
+        <div class="notes-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-content="sections.notes.kicker"></p>
+            <h2 id="notes-heading" data-content="sections.notes.title"></h2>
+            <p data-content="sections.notes.intro"></p>
+            <a class="text-link" data-notes-link target="_blank" rel="noopener"></a>
           </div>
-          <div class="col s12 m6">
-            <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=samaranand&layout=compact&langs_count=8&theme=dark"/>
-
-          </div>
+          <div class="notes-register reveal" data-notes-list></div>
         </div>
-      </p>
-    </section> -->
+      </section>
 
-  <!-- skills area -->
-
-  <section class="section section-boxes center scrollspy" id="skills">
-    <h2 class="light grey-text text-lighten-3"><strong>Skills</strong></h2>
-    <div class="container">
-      <div class="row secondary-bg">
-        <div class="col s12 m6 l3 box">
-          <i class="fas fa-terminal fa-2x"></i>
-
-          <h4>C++</h4>
+      <section class="section shell about-section" id="about" aria-labelledby="about-heading">
+        <div class="portrait-block reveal">
+          <div class="portrait-frame"><img src="img/samar-anand.png" alt="Samar Anand" /></div>
+          <p data-content="about.caption"></p>
         </div>
-        <div class="col s12 m6 l3 box">
-          <i class="fas fa-puzzle-piece fa-2x"></i>
-          <h4>DS & Algo</h4>
+        <div class="about-copy reveal">
+          <p class="eyebrow" data-content="sections.about.kicker"></p>
+          <h2 id="about-heading" data-content="sections.about.title"></h2>
+          <div data-about-copy></div>
         </div>
-        <div class="col s12 m6 l3 box">
-          <i class="fab fa-js-square fa-2x"></i>
-          <h4>JavaScript</h4>
+      </section>
+
+      <section class="section shell current-section" aria-labelledby="current-heading">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-content="sections.now.kicker"></p>
+          <h2 id="current-heading" data-content="sections.now.title"></h2>
         </div>
-        <div class="col s12 m6 l3 box">
-          <i class="fas fa-code fa-2x"></i>
-          <h4>Node JS</h4>
+        <div class="current-list reveal" data-current-list></div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="shell contact-inner reveal">
+          <p class="eyebrow" data-content="sections.contact.kicker"></p>
+          <h2 id="contact-heading" data-content="sections.contact.title"></h2>
+          <a class="contact-email" data-contact-email></a>
+          <div class="contact-links" data-contact-links></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- project - area -->
-
-  <section class="section section-project center scrollspy" id="projects">
-    <h2 class="light grey-text text-lighten-3"><strong>Projects</strong></h2>
-    <div class="container">
-      <div class="row">
-        <ul class="collapsible">
-          <!-- copy the follow 'li' item as much project -->
-
-          <!-- <li class="col s12 m12 l12 secondary-bg">
-              <div class="collapsible-header secondary-bg">
-                <h5
-                  class="tooltipped"
-                  data-position="top"
-                  data-tooltip="Click to Know More"
-                >
-                  flyCom Byte
-                </h5>
-                <section class="section right prjct-head">
-                  <a href="#!">GitHub</a> /
-                  <a href="http://flycom-byte.github.io/">web-Link</a>
-                </section>
-              </div>
-              <div class="collapsible-body left secondary-bg project-element">
-                <span>Lorem ipsum dolor sit amet.</span>
-              </div>
-            </li> -->
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- section- contact -->
-
-  <!-- footer -->
-
-  <footer class="page-footer grey darken-3 light grey-text text-lighten-2 scrollspy" id="contact">
-    <div class="container">
-      <div class="row">
-        <h5 class="white-text">Contacts</h5>
-        <div class="col s6 m3">
-          <a class="grey-text text-lighten-3" href="mailto: samarss2015@gmail.com" target="_blank"><i
-              class="fas fa-envelope"></i> Email</a>
-        </div>
-        <div class="col s6 m3">
-          <a class="grey-text text-lighten-3" href="https://github.com/samaranand" target="_blank"><i
-              class="fab fa-git-square"></i> Github</a>
-        </div>
-        <!-- <div class="col s6 m3">
-            <a
-              class="grey-text text-lighten-3"
-              href="https://dev.to/samaranand"
-              target="_blank"
-              ><i class="fab fa-dev"></i> Dev</a
-            >
-          </div> -->
-        <div class="col s6 m3">
-          <a class="grey-text text-lighten-3" href="https://samaranand.medium.com/" target="_blank"><i
-              class="fab fa-medium"></i> Medium</a>
-        </div>
-        <div class="col s6 m3">
-          <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/samaranand/" target="_blank"><i
-              class="fab fa-medium"></i> LinkedIn</a>
-        </div>
-        <!-- https://www.linkedin.com/in/samaranand/ -->
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © Samar Anand
-        <div class="right">
-          <a href="https://kiwismedia.com/@samar" target="_blank">
-            <strong class="tooltipped" data-position="top"
-              data-tooltip="Click for KiwisMedia profile">KiwisMedia</strong>
-          </a>
-          &nbsp;| &nbsp;
-          <!-- download -->
-          <a class="darken-3 grey-text text-lighten-4 right" href="files/Samar-Anand_Resume.pdf" target="_blank"><strong
-              class="tooltipped" data-position="top" data-tooltip="Click to View Resume">Resume</strong></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="./js/app.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Init Sidenav
-      $(".button-collapse").sideNav({
-        closeOnClick: true,
-      });
-
-      // scrollspy
-      $(".scrollspy").scrollSpy();
-
-      // collapse
-      $(".collapsible").collapsible();
-
-      // tooltip
-      $(".tooltipped").tooltip();
-
-      //scrollFire
-
-      const options = [
-        {
-          selector: ".main-text",
-          offset: 0,
-          callback: function (el) {
-            Materialize.fadeInImage($(el));
-          },
-        },
-        {
-          selector: ".navbar-fixed",
-          offset: 1200,
-          callback: function () {
-            $("nav").removeClass("transparent").addClass("grey darken-3");
-          },
-        },
-      ];
-
-      Materialize.scrollFire(options);
-    });
-  </script>
-</body>
-
+      </section>
+    </main>
+    <footer class="footer shell"><span>© <span data-year></span> Samar Anand</span><span>Built quietly in Bengaluru.</span></footer>
+  </body>
 </html>
