@@ -34,7 +34,6 @@ No install step is required.
 │   └── samar-anand.png
 ├── assets/
 │   └── Samar-Anand-Resume.pdf
-├── favicon.svg
 ├── LICENSE
 └── README.md
 ```
@@ -151,10 +150,10 @@ Core design choices:
 Current required assets:
 
 - `img/samar-anand.png` — portrait used in the About section
+- `img/logo.png` — browser tab icon
 - `assets/Samar-Anand-Resume.pdf` — downloadable resume
-- `favicon.svg` — browser tab icon matching the current `SA.` wordmark
 
-The older shield-style `img/logo.png` was not kept because it reads like an earlier student/coder identity and is too detailed for a browser tab. The current favicon is simpler and matches the redesigned site.
+The favicon uses the older shield-style `img/logo.png` because it is recognizable from the previous site and keeps a small piece of continuity in the browser tab.
 
 ## Deployment
 
