@@ -107,6 +107,7 @@ const renderExperience = () => {
 const renderProjects = () => {
   document.querySelector('[data-workshop-list]').innerHTML = content.projects.map((project, index) => {
     const projectUrl = project.link ? escapeHtml(project.link) : null;
+    const repoUrl = project.repo ? escapeHtml(project.repo) : null;
     const title = projectUrl
       ? `<a href="${projectUrl}" target="_blank" rel="noopener">${escapeHtml(project.title)} <span aria-hidden="true">↗</span></a>`
       : escapeHtml(project.title);
@@ -130,10 +131,40 @@ const renderProjects = () => {
           <p>${escapeHtml(project.summary)}</p>
           ${details}
           ${tagList(project.tags)}
+          <div class="project-actions">
+            ${projectUrl ? `<a class="project-link project-link-live" href="${projectUrl}" target="_blank" rel="noopener">Live <span aria-hidden="true">↗</span></a>` : ''}
+            ${repoUrl ? `<a class="project-link" href="${repoUrl}" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>` : ''}
+          </div>
         </div>
       </article>
     `;
   }).join('');
+};
+
+const renderGitHub = () => {
+  const profile = document.querySelector('[data-github-profile]');
+  profile.href = content.github.profile;
+  profile.innerHTML = `${escapeHtml(content.github.label)} <span aria-hidden="true">↗</span>`;
+
+  document.querySelector('[data-github-stats]').innerHTML = content.github.stats.map((stat) => `
+    <div class="github-stat">
+      <strong>${escapeHtml(stat.value)}</strong>
+      <span>${escapeHtml(stat.label)}</span>
+    </div>
+  `).join('');
+
+  document.querySelector('[data-github-repos]').innerHTML = content.github.repos.map((repo) => `
+    <article class="github-repo">
+      <div>
+        <h3><a href="${escapeHtml(repo.url)}" target="_blank" rel="noopener">${escapeHtml(repo.name)} <span aria-hidden="true">↗</span></a></h3>
+        <p>${escapeHtml(repo.description)}</p>
+      </div>
+      <div class="github-repo-meta">
+        <span>${escapeHtml(repo.language)}</span>
+        ${repo.live ? `<a href="${escapeHtml(repo.live)}" target="_blank" rel="noopener">Live</a>` : ''}
+      </div>
+    </article>
+  `).join('');
 };
 
 const renderIdeas = () => {
@@ -187,6 +218,7 @@ setTextContent();
 renderWork();
 renderExperience();
 renderProjects();
+renderGitHub();
 renderIdeas();
 renderNotes();
 renderAbout();

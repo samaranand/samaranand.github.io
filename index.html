@@ -11,9 +11,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://samaranand.github.io/" />
     <link rel="icon" href="img/logo.png" type="image/png" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script defer src="js/content.js"></script>
-    <script defer src="js/app.js"></script>
+    <link rel="stylesheet" href="css/main.css?v=2.1.1" />
+    <script defer src="js/content.js?v=2.1.1"></script>
+    <script defer src="js/app.js?v=2.1.1"></script>
     <title>Samar Anand — Software Engineer & Builder</title>
   </head>
   <body>
@@ -28,7 +28,8 @@
         </button>
         <div class="nav-links" id="nav-links" data-nav-links>
           <a href="#work">Work</a>
-          <a href="#workshop">Projects</a>
+          <a href="#projects">Projects</a>
+          <a href="#github">GitHub</a>
           <a href="#experience">Experience</a>
           <a href="#notes">Notes</a>
           <a href="#about">About</a>
@@ -46,7 +47,7 @@
         </div>
         <div class="hero-bottom reveal">
           <p class="hero-summary" data-content="hero.summary"></p>
-          <a class="button button-primary" href="#workshop">Open the projects <span aria-hidden="true">↓</span></a>
+          <a class="button button-primary" href="#projects">Open the projects <span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-index reveal" aria-hidden="true"><span>01 / 07</span><span>Digital workshop</span></div>
       </section>
@@ -62,7 +63,8 @@
         <div class="work-index reveal" aria-label="Additional professional work" data-work-index></div>
       </section>
 
-      <section class="section workshop-section" id="workshop" aria-labelledby="workshop-heading">
+      <span id="workshop" class="anchor-alias" aria-hidden="true"></span>
+      <section class="section workshop-section" id="projects" aria-labelledby="workshop-heading">
         <div class="shell">
           <div class="section-heading workshop-heading reveal">
             <p class="eyebrow" data-content="sections.workshop.kicker"></p>
@@ -73,6 +75,21 @@
           <div class="ideas-shelf reveal" aria-label="Other things I have been building or thinking about">
             <p class="eyebrow">/smaller ideas</p>
             <div class="ideas-list" data-ideas-list></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell github-section" id="github" aria-labelledby="github-heading">
+        <div class="github-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-content="sections.github.kicker"></p>
+            <h2 id="github-heading" data-content="sections.github.title"></h2>
+            <p data-content="sections.github.intro"></p>
+            <a class="text-link" data-github-profile target="_blank" rel="noopener"></a>
+          </div>
+          <div class="github-panel reveal">
+            <div class="github-stats" data-github-stats></div>
+            <div class="github-repos" data-github-repos></div>
           </div>
         </div>
       </section>

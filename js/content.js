@@ -22,6 +22,11 @@ window.portfolioContent = {
       title: 'Projects, personal infrastructure, and experiments.',
       intro: 'A shelf of shipped tools, home systems, release experiments, automations, and small utilities that make me learn by operating them.'
     },
+    github: {
+      kicker: '/github',
+      title: 'Public work and small tools on GitHub.',
+      intro: 'A few public repositories from my project shelf. The numbers are static snapshots from the public GitHub profile so this site stays fast, free, and dependency-free on GitHub Pages.'
+    },
     experience: {
       kicker: '/experience',
       title: 'A compact career trail.',
@@ -144,6 +149,7 @@ window.portfolioContent = {
       summary: 'A static React and TypeScript application that lets non-LaTeX users edit structured resume data, preview an A4 resume, import/export JSON, and print to PDF without any backend or cloud storage.',
       tags: ['React', 'TypeScript', 'Vite', 'GitHub Pages', 'localStorage', 'Print CSS'],
       link: 'https://samaranand.github.io/resume-builder/',
+      repo: 'https://github.com/samaranand/resume-builder',
       image: null,
       longerDetails: [
         'Uses one fixed resume template modeled after my Overleaf resume rather than a theme-based resume builder.',
@@ -202,6 +208,61 @@ window.portfolioContent = {
     { status: 'Thinking about it', title: 'Personal dashboards / personal OS' },
     { status: 'Ongoing habit', title: 'Self-hosted tools and small automations' }
   ],
+
+  github: {
+    profile: 'https://github.com/samaranand',
+    label: 'Open GitHub profile',
+    stats: [
+      { label: 'Public repos', value: '25' },
+      { label: 'Followers', value: '15' },
+      { label: 'Public gists', value: '2' },
+      { label: 'Stars on own repos', value: '6' }
+    ],
+    repos: [
+      {
+        name: 'resume-builder',
+        description: 'Static React resume builder for one LaTeX-style A4 resume template.',
+        language: 'TypeScript',
+        url: 'https://github.com/samaranand/resume-builder',
+        live: 'https://samaranand.github.io/resume-builder/'
+      },
+      {
+        name: 'linkedin-outreach-assistant',
+        description: 'A browser-side assistant project for LinkedIn outreach workflows.',
+        language: 'JavaScript',
+        url: 'https://github.com/samaranand/linkedin-outreach-assistant',
+        live: null
+      },
+      {
+        name: 'browser-api-hitter',
+        description: 'A small browser utility for manually exercising APIs while debugging.',
+        language: 'JavaScript',
+        url: 'https://github.com/samaranand/browser-api-hitter',
+        live: null
+      },
+      {
+        name: 'tiny-file-server',
+        description: 'A minimal file-serving utility for local development and sharing.',
+        language: 'JavaScript',
+        url: 'https://github.com/samaranand/tiny-file-server',
+        live: null
+      },
+      {
+        name: 'blogs',
+        description: 'Static notes and articles archive.',
+        language: 'JavaScript',
+        url: 'https://github.com/samaranand/blogs',
+        live: 'https://samaranand.github.io/blogs'
+      },
+      {
+        name: 'sorting-visualizer',
+        description: 'Older visual learning project for sorting algorithms.',
+        language: 'JavaScript',
+        url: 'https://github.com/samaranand/sorting-visualizer',
+        live: 'https://samaranand.github.io/sorting-visualizer/'
+      }
+    ]
+  },
 
   notes: {
     link: 'https://samaranand.github.io/blogs/',
