@@ -18,9 +18,9 @@ window.portfolioContent = {
       note: 'Some implementation details are intentionally abstracted for customer, product, and security confidentiality.'
     },
     workshop: {
-      kicker: '/workshop',
-      title: 'Personal infrastructure and experiments.',
-      intro: 'These are not polished products. They are working notes in software form: home systems, release experiments, automations, and small utilities that make me learn by operating them.'
+      kicker: '/projects',
+      title: 'Projects, personal infrastructure, and experiments.',
+      intro: 'A shelf of shipped tools, home systems, release experiments, automations, and small utilities that make me learn by operating them.'
     },
     experience: {
       kicker: '/experience',
