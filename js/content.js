@@ -137,6 +137,21 @@ window.portfolioContent = {
 
   projects: [
     {
+      id: 'resume-builder',
+      status: 'Shipped',
+      title: 'Resume Builder',
+      subtitle: 'A private browser-based editor for my LaTeX-style resume template.',
+      summary: 'A static React and TypeScript application that lets non-LaTeX users edit structured resume data, preview an A4 resume, import/export JSON, and print to PDF without any backend or cloud storage.',
+      tags: ['React', 'TypeScript', 'Vite', 'GitHub Pages', 'localStorage', 'Print CSS'],
+      link: 'https://samaranand.github.io/resume-builder/',
+      image: null,
+      longerDetails: [
+        'Uses one fixed resume template modeled after my Overleaf resume rather than a theme-based resume builder.',
+        'Stores all resume data locally in the browser and keeps exported PDFs as selectable text through browser printing.',
+        'Hosted as a static GitHub Pages site with Actions-based deployment.'
+      ]
+    },
+    {
       id: 'eagle',
       status: 'Active',
       title: 'Eagle',
