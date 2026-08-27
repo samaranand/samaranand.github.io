@@ -73,7 +73,7 @@ window.portfolioContent = {
       area: 'Compliance and reliability / Zeta',
       title: 'RBI/UPI controls and incident remediation',
       summary: 'Delivered compliance controls across account and transaction flows, and worked through the root cause of Elasticsearch CPU saturation that sat behind repeated production incidents.',
-      impact: ['50,000+ accounts impacted by compliance controls', '50+ incidents traced through the reliability investigation'],
+      impact: ['150,000+ accounts closed for RBI compliance', '50+ incidents traced through the reliability investigation'],
       tags: ['Kafka', 'Event-driven systems', 'Batch processing', 'Reliability']
     },
     {
@@ -81,7 +81,7 @@ window.portfolioContent = {
       area: 'Identity architecture / Zeta',
       title: 'Email verification with Magic Link and Google SSO',
       summary: 'Contributed to verification architecture for secure login and onboarding flows, combining Magic Link and Google SSO for a large user base.',
-      impact: ['30,000+ users supported', 'Security-sensitive workflow hardened'],
+      impact: ['200,000+ users supported at ~1,000 verifications/day', 'Zero post-launch production incidents'],
       tags: ['Security', 'Identity', 'Google SSO', 'Magic Link']
     }
   ],
@@ -213,7 +213,7 @@ window.portfolioContent = {
     profile: 'https://github.com/samaranand',
     label: 'Open GitHub profile',
     stats: [
-      { label: 'Public repos', value: '25' },
+      { label: 'Public repos', value: '26' },
       { label: 'Followers', value: '15' },
       { label: 'Public gists', value: '2' },
       { label: 'Stars on own repos', value: '6' }
